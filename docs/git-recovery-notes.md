@@ -1,5 +1,9 @@
 # Git Recovery Practice
 
+## Recovery rule
+
+Always inspect the state of a change before choosing an undo command.
+
 ## Scenario A: Discard an unstaged change
 
 ### What I changed
