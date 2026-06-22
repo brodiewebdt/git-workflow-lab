@@ -4,44 +4,6 @@
 
 ### What I changed
 
-### Repository state
-
-### What I wanted to preserve
-
-### What I wanted to undo
-
-### Command or method used
-
-### Why it was appropriate
-
-### Result
-
----
-
-## Scenario B: Unstage a file
-
-### What I changed
-
-### Repository state
-
-### What I wanted to preserve
-
-### What I wanted to undo
-
-### Command or method used
-
-### Why it was appropriate
-
-### Result
-
----
-
-# Git Recovery Practice
-
-## Scenario C: Correct most recent local commit
-
-### What I changed
-
 I replaced the page heading with different content
 
 ### Repository state
@@ -71,7 +33,7 @@ Page cleared of any git status issues.
 
 ---
 
-## Scenario D: Undo local commit while preserving the work
+## Scenario B: Unstage a file
 
 ### What I changed
 
@@ -101,6 +63,44 @@ The restore command removed the css/styles.css file from the staging area, and a
 ### Result
 
 README.md file was committed and the css/styles.css file was removed from the staging area.
+
+---
+
+# Git Recovery Practice
+
+## Scenario C: Correct most recent local commit
+
+### What I changed
+
+### Repository state
+
+### What I wanted to preserve
+
+### What I wanted to undo
+
+### Command or method used
+
+### Why it was appropriate
+
+### Result
+
+---
+
+## Scenario D: Undo local commit while preserving the work
+
+### What I changed
+
+### Repository state
+
+### What I wanted to preserve
+
+### What I wanted to undo
+
+### Command or method used
+
+### Why it was appropriate
+
+### Result
 
 ---
 
