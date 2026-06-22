@@ -76,17 +76,32 @@ README.md file was committed and the css/styles.css file was removed from the st
 
 ### What I changed
 
+Added note to git-recovery-notes.md.
+
 ### Repository state
+
+modified: git-recovery-notes.md
+File staged and commited with poor commit message.
 
 ### What I wanted to preserve
 
+I need to fix the commit message for git-recovery-notes.md commit.
+
 ### What I wanted to undo
+
+Change the commit to a better commit message.
 
 ### Command or method used
 
+git commit --amend -m "docs: add Git recovery rule.
+
 ### Why it was appropriate
 
+It fixed the poor commit message with one that explains the file change better.
+
 ### Result
+
+Commit has a better descriptive message.
 
 ---
 
@@ -94,17 +109,31 @@ README.md file was committed and the css/styles.css file was removed from the st
 
 ### What I changed
 
+Added temporary code to index.html, and staged and committed the file.
+
 ### Repository state
+
+index.html was committed properly
 
 ### What I wanted to preserve
 
+Undo commit without losing the changes in index.html
+
 ### What I wanted to undo
+
+Undo the index.html file commit.
 
 ### Command or method used
 
+git reset --soft HEAD~1
+
 ### Why it was appropriate
 
+It removed the commit without changing the index.html file changes.
+
 ### Result
+
+Commit was removed from the commit list.
 
 ---
 
