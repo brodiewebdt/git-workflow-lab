@@ -2,8 +2,6 @@
 
 This is a fictional one page site for a non-profit arts organization hosting a weekend event for the local community.
 
-The festival takes place every weekend of the year.
-
 ## Git Practice
 
 This repository is being used to practice a professional Git workflow.
