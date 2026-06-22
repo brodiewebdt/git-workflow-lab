@@ -141,14 +141,26 @@ Commit was removed from the commit list.
 
 ### What I changed
 
+Added incorrect information in README.md and pushed to repository
+
 ### Repository state
+
+file was pushed properly.
 
 ### What I wanted to preserve
 
+Keep the incorrect commit message and fix and push the corrected version
+
 ### What I wanted to undo
+
+Add the correct information to README.md and push the corrected version to the repository, without removing the incorrect version.
 
 ### Command or method used
 
+git revert COMMIT_ID
+
 ### Why it was appropriate
+
+I was able to add the updated commit without removing the incorrect version.
 
 ### Result
