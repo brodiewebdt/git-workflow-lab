@@ -25,11 +25,18 @@ Change the page heading back to the orginal content.
 
 ### Command or method used
 
-I didn't need to run a command. I just changed the page heading back to the original content, and that cleared the issue.
+I manually restored the original heading instead of using a Git restore
+command.
 
 ### Why it was appropriate
 
-The file wasn't staged, so no commands were necessary to clear the issue.
+The manual edit made the working file match the last committed version, so Git
+no longer detected a difference.
+
+### What I would use next time
+
+For this exercise, the intended Git method was restoring `index.html` from the
+last committed version after first reviewing the diff.
 
 ### Result
 
@@ -69,8 +76,6 @@ The restore command removed the css/styles.css file from the staging area, and a
 README.md file was committed and the css/styles.css file was removed from the staging area.
 
 ---
-
-# Git Recovery Practice
 
 ## Scenario C: Correct most recent local commit
 
@@ -129,11 +134,15 @@ git reset --soft HEAD~1
 
 ### Why it was appropriate
 
-It removed the commit without changing the index.html file changes.
+`git reset --soft HEAD~1` removed the most recent local commit while preserving
+its changes. It kept those changes staged rather than returning them to the
+unstaged working directory.
 
 ### Result
 
-Commit was removed from the commit list.
+The commit was removed, and the HTML changes were preserved in the staging
+area. To match the assignment's requested unstaged state, I would also need to
+unstage the file, or use the default mixed reset for this situation.
 
 ---
 
@@ -157,10 +166,27 @@ Add the correct information to README.md and push the corrected version to the r
 
 ### Command or method used
 
-git revert COMMIT_ID
+I used `git revert <commit-id>` to create a new commit that reversed the
+incorrect README change.
+
+After the revert removed the incorrect sentence, I added the correct sentence,
+staged the README, and created a new corrective commit.
 
 ### Why it was appropriate
 
-I was able to add the updated commit without removing the incorrect version.
+The incorrect commit had already been pushed. Reverting it preserved the shared
+history instead of rewriting or deleting the original commit.
+
+Adding the corrected sentence in a new commit made the final content accurate
+while keeping the full history visible.
 
 ### Result
+
+The history contains:
+
+1. The original incorrect commit
+2. A revert commit that removes the incorrect sentence
+3. A corrective commit that adds the accurate sentence
+
+The repository now contains the correct content without rewriting shared
+history.
